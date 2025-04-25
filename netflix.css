@@ -1,0 +1,634 @@
+body{
+  padding:0;
+  margin: 0;
+  background-color: black;
+}
+
+
+.header{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/74d734ca-0eab-4cd9-871f-bca01823d872/web/PK-en-20241021-TRIFECTA-perspective_29e9deef-cf0e-404a-9dce-31ed3f8ebd8b_large.jpg);
+background-size: max(1200px, 100vw); 
+/* when in inspect mode we shrink width it appears better and not go above faraway */
+height: 100vh;
+ opacity: 0.9; 
+background-repeat: no-repeat;
+background-position: center center;
+ /* position: relative;   */
+ 
+/* idk why position relative here */
+
+
+}
+.logo{
+    width: 140px;
+    height: 48px;
+    /* background-color: red; */
+   
+ margin-top: 20px;
+
+ position: relative;
+ z-index: 10;
+}
+ 
+   
+.header .box{
+  height: 100vh;
+  /* this height 90 vh working as background pic height */
+  width: 100%;
+  opacity: 0.77;
+  background-color: rgba(0, 0, 0, 0.747);
+}
+
+.logo svg{
+     position: relative; 
+    z-index: 10;
+    /* to pop it out and appear properly */
+}
+.button1 button{
+    background-color: red;
+    border: 1px solid red;
+    width: 76px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 800;
+   color: white;
+     position: relative;  
+    z-index: 10; 
+   
+}
+
+.nav{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+align-items: center;    
+     max-width: 80vw; 
+  margin: auto;
+    
+}
+.para{
+   position: relative; 
+   top: 90px;
+   z-index: 10;
+  /* right: 25px; */
+  
+  color: white;
+  position: relative;
+ 
+ padding: 0 20px;
+  
+  display: flex;
+   flex-direction: column; 
+  justify-content: center;
+  align-items:center;
+  height: calc(100%-82px);
+  /* 100%-82px why? */
+  /* rather than using row gap or top margin to put it below i used height in % to fix it. */
+  font-family: "Martel Sans", sans-serif;
+
+}
+.para .one{
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center; 
+
+} 
+.para .two{
+  text-align: center; 
+ position: relative;
+ bottom: 23px;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+ 
+} 
+.para .three{
+  text-align: center; 
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  position: relative;
+ bottom: 23px;
+} 
+.para .four{
+  text-align: center; 
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 15px;
+  position: relative;
+ bottom: 29px;
+ /* opacity: 10; */
+ /* z-index: 10; */
+} 
+ .log{
+ display: flex; 
+ justify-content: center;
+ align-content: center;
+
+} 
+.log input{
+  
+   
+  width: 300px;
+  padding: 20px 9px;
+  border-radius: 5px;
+  background-color: rgba(23, 23, 23, 0.425);
+  border: 2px solid white;
+  color: white;
+ 
+  text-align: left;
+  position: relative;
+  z-index: 10;
+
+}
+.log button{position: relative;
+  background-color: red;
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 7px 9px;
+  border-radius: 3px;
+  border: 1px solid red;
+  margin-left: 0.5em;
+  width: 250px;
+height: 60px;
+
+z-index: 10;
+}
+/* @media only screen and(max-width:450px){
+  .header{
+    display: flex;
+    flex-direction: column;
+  }}
+  @media only screen and(max-width:450px){
+    .nav{
+      display: flex;
+      flex-direction: column;
+    }}
+    @media only screen and(max-width:450px){
+      .para{
+        display: flex;
+        flex-direction: column;
+      }}
+      @media only screen and(max-width:450px){
+        .log{
+          display: flex;
+          flex-direction: column;
+        }} */
+         /* .line{
+          width: 100%;
+          border-bottom: 2px solid red;
+border-radius: 50%;
+         }
+         */
+         section .main{
+          background-image: url(https://occ-0-3631-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdpGx952Ppci4e_e0p21TEetkskFRKfeKSuxIShIdVfM6svW2F-c3l8s4m9kY3wyl76_aB0P5YBbFOaPZzx90V0QOxMDjKZCJyFNW00QHz2ha5Z9zjnw-JXnBcsNZlH423Ck15pCH3ddbimHXrJ34P7rUbQTZOl67rnV8nO_Pl_9H9oaFbsyskxAJmGpx5d-bS-CTCKSxKiQ51esR3AlfLNB1LLdw6UNn3ng8pOLnxP0n6UJ4tKCNb2othESDUXHZOc8r7MtYMMTYJw4Tqi6-nhJhK_Y4N2SLgTw1xqjSQKzriAVJhCpePIn2T7FBTW4m4okOgkQALHFNg4UFaX13VQ.jpg?r=17c);
+          width: 220px ; height: 300px;
+          background-repeat: no-repeat;
+          position: relative;
+          z-index: 10;
+          
+         }
+          .box1{
+          height: 80vh;
+          width: 100%;
+          opacity: 0.99;
+          background-color: black;
+        }
+
+        section .main1{
+          background-image: url(https://occ-0-3631-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZtbpW4qsI6fhARQZM--c19ZsBX-PPQvk0O0a3tnG-Mb8JT6WGYFOyYXsT4ZuPv5yVrehhrHELk7TsrH_BXoCnxYdW5n87jDl-_fXoDcrTVsSnoA2irYe9j5lsUlR56_I1Kl2eV6dN2Si3YE0JsnND5MNbZgVza2m7y1XThVszf-jk_Be2gKTXx98P2BuEsHYi6ReOSBmPx3X8n1uekDS_qHfujJWP9yLIcj697cd98Ux3LhL3nHuM1tiZlARSsV_q6rKxHr6mjHUDqfq5W1-K1t-8SzUDi5XdSserI5VV1H5wpqkwo2ePKvaGUM4_kEb6aDDXGVfB-Y4XZYs0cSxMIHuO9H2BHR67M4Y2TewErel7Wy6_c.jpg?r=21e);
+          width: 220px ; height: 300px;
+          background-repeat: no-repeat;
+          position: relative;
+          z-index: 10;
+          
+         }
+        
+         section .main2{
+          background-image: url(https://occ-0-3631-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfzf2nJD53u1Jtj29ry65OF8zQPu8ujwviPZUEsmK_hsEYMvdz9I9sJNe93MVedeCrEG8_75Q42e2MugpXgP0-jWiPShYG7exsC1iT5_w-YAfpV9nYA8civ-uLgzIaSJ0kKwOTiV1pBxdzgLxb0UQ6Wf2KM3duVx95OFmoY7ZHc0zuu7CTY4j6JwVpNzfBdXd3QqiCnBr8VvqGiF40X9HJnWLVIBV0SwWNgF2WjG2CAZMA0lFonf3G2sxJv_S1lapmAL2diqgUd260BtYXNTOOcvvPRY.jpg?r=738);
+          width: 220px ; height: 300px;
+          background-repeat: no-repeat;
+          position: relative;
+          z-index: 10;
+                   }
+         section .main3{
+          background-image: url(https://occ-0-3631-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSj_gFNn__XImwMMpb7WpODKfZC1aYGs3VxLkGLPoi2OUKG7rxs6pWk4bBjNREmboFYfi75TcnncWZK7vaGfrk0oAAXhARiPVGjpnJ9K6kbu6d_owvddD5V4SYKp6xutCRHR1GA5WkNNcXvelozaizx6S7giUxM6dX-y6kEjTtiBq86boYeer_FQiD1eoyyV5TB3KTXlPagl2rmqCWaLW8OjcBl8kOxDkFoXCiElbjbasSLNevrfN8yBFbKR_BfRNNO96J0Xj5Hdr6x8Bl_CQoVJclzr-HGLtBaHpjBHtTpIoq41LlGDgUcx.jpg?r=eb0);
+          width: 220px ; 
+          height: 300px;
+          background-repeat: no-repeat;
+          position: relative;
+          z-index: 10;
+         }   
+         
+         .father{
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 3em;
+         }
+         .text h2{
+          margin-top: 0;
+         
+        
+          color: white;
+          margin-left: 130px;
+          margin-bottom: 30px;
+
+         }
+         .box1 span button{
+          font-size: larger;
+          padding: 7px 14px;
+          color: white;
+          background-color: black;
+          border: 1px solid rgba(255, 255, 255, 0.342);
+          position: relative;
+          left: 120px;
+          margin-bottom: 30px;
+          
+         }
+         section .main .a{
+          font-size: 100px;
+          position: relative;
+          top: 52%;
+          font-weight: 600;
+          color: aquamarine;
+          text-shadow: 2 2 9 black  ;
+         
+        
+         }
+         section .main1 .b{
+          font-size: 100px;
+          position: relative;
+          top: 52%;
+          font-weight: 600;
+          color: aquamarine;
+          text-shadow: 2 2 9 black  ;
+         
+        
+         }
+         section .main2 .c{
+          font-size: 100px;
+          position: relative;
+          top: 52%;
+          font-weight: 600;
+          color: aquamarine;
+          text-shadow: 2 2 9 black  ;
+         
+        
+         }
+         section .main3 span{
+          font-size: 100px;
+          position: relative;
+          top: 52%;
+          font-weight: 600;
+          color: aquamarine;
+          
+          text-shadow: 2 2 9 black  ;
+          /* position: relative; */
+          /* z-index: -10; */
+         
+        
+         }
+       
+          .box3{
+          height: 105vh;
+          width: 100%;
+          /* opacity:1 ; */
+          background-color: black;
+        }
+        .part{
+          display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 1em;
+overflow: none;
+        }
+
+        .boxx{
+          color: white;
+          border: 1px solid rgba(220, 220, 220, 0.308);
+          height: 35px;
+          padding: 20px 30px ;
+          width: 1000px;
+          font-weight: 500;
+          font-size: 30px;
+       background-color: #2d2d2d;
+        }
+        .boxx:hover{
+background-color: rgb(65 65 65);
+cursor: pointer;
+        }
+        .faq h2{ 
+          margin-top: 0;
+          /* otherwise orignal white background of body is appearin */
+        color: white;
+        margin-left: 150px;
+        }
+         .box4{
+          height: 70vh;
+          width: 100%;
+          opacity: 1;
+
+          background-color: black;
+        }
+
+        .big{
+          height: 70vh;
+          background-color: black;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          column-gap: 1em;
+        }
+        .square{
+color: white;
+ height: 53vh; 
+ width: 17vw; 
+ /* position: absolute; */
+background-color: #1e162b;
+border-radius: 10px ;
+border: 2px solid rgba(14, 13, 13, 0.685);
+        }
+        /* .square1 and .square4 boxes are made with right technique if want to follow in future */
+        .square1 .op1{
+          font-size: 30px;
+         margin-bottom: 30px;
+        }
+        
+        .square1{
+           padding: 30px 15px; 
+           margin-bottom: 0px; 
+           height: 44vh; 
+       
+           /* position: absolute;  */
+        }
+        .l{
+          position: relative;
+          top: 10%;
+          text-align: left;
+          display: inline-block;
+          /* i did display inline block because otherwise text was noy getting aligned properly */
+
+        }
+
+
+        .square1 svg {
+          
+          position: relative;
+         left:69%;
+         top: 49%;
+        } 
+        .square2 .q{
+          font-size: 27px;
+          margin-bottom: 110px; 
+         
+        }
+        .square2{
+          padding: 30px 15px; 
+          margin-bottom: 0px; 
+          height: 44vh; 
+          /* position: absolute;  */
+       }
+        .square2 svg{
+         position: relative;
+         top:21%;
+         left: 70%;
+        }
+        .square3 .m{
+          font-size: 30px;
+          
+          margin-bottom: 110px; 
+        }
+        .square3 .x{
+          text-align: left;
+        }
+        .square3{
+          padding: 30px 15px; 
+          margin-bottom: 0px; 
+          height: 44vh; 
+          /* position: absolute;  */
+       }
+        .square3 svg{
+         position: relative;
+         top:43%;
+         left: 70%;
+        }
+        .square4 .r{
+          font-size: 30px;
+          padding: 25px 15px;
+           display: inline-block; 
+        }
+        .square4 .r1{
+          position: relative;
+          top: 1%;
+          padding: 0 15px;
+           text-align: justify; 
+          display: inline-block;
+             /* i did display inline block because otherwise text was noy getting aligned properly */
+        }
+        .square4 svg{
+          position: relative;
+         top:18%;
+         left: 68%;
+        }
+        .square4{
+          width: 19vw;
+        }
+        .footer{
+          height: 100vh;
+          background-color: black;
+         
+
+        }
+        .lemon p
+        {
+          margin: 0;
+          text-align: center;
+          color: white;
+          height: 0px;
+
+        }
+        .midd{
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          color: white;
+        margin-top:2% ;
+        column-gap: 10px;
+        margin-bottom: 100px;
+        }
+        .midd input{
+          width: 500px;
+          height: 36px;
+         border: 2px solid white;
+          background-color: rgba(128, 128, 128, 0.151);
+          border-radius: 5px ;
+border: 1px solid rgba(179, 170, 170, 0.685);
+padding: 10px 15px;
+position: relative;
+z-index: 11;
+font-size: 15px;
+        }
+        .button3 button{
+          height: 60px;
+          width: 190px;
+          background-color: red;
+          border: 1px solid red;
+          border-radius: 5px;
+          color: white;
+          font-weight: 600;
+          font-size: 23px;
+          padding: 15px 15px;
+        }
+        .container10{
+          height: 150px;
+          width: 300px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+margin-left: 160px;
+column-gap: 2em;
+overflow: none;
+
+
+        }
+         
+        
+        .g{
+          color:rgba(255, 255, 255, 0.63);
+          border: 1px sold white;
+          height: 20px;
+          width: 200px;
+          text-decoration: underline;
+
+        }
+        .question{
+          color: rgba(255, 255, 255, 0.63);
+          margin-left: 160px;
+          text-decoration: underline;
+          margin-bottom: 50px;
+        }
+        .button4{
+
+          color: white;
+          margin-left: 160px;
+          margin-top: 45px;
+        overflow: none;
+
+        
+        }
+         /* @media screen and (max-width:1000px), screen and (orientation:portrait){
+         .button4{
+          
+        margin-top: 150px;
+
+         } 
+        } */
+        .button4 button{
+          background-color: black;
+          color: white;
+          width: 130px;
+          padding: 0px 5px;
+          border: 1px solid rgba(255, 255, 255, 0.541);
+        border-radius: 5px;
+        font-size: 18px;
+        }
+        .button4 svg{
+          position: relative;
+          top: 8px;
+        }
+        .byeee{
+         margin-top: 35px;
+          color: rgba(255, 255, 255, 0.521);
+          margin-left: 163px;
+          overflow: none;
+        }
+        .box5{
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.959);
+        }
+        /* @media screen and (max-width:1000px){
+          .byeee{
+            margin-top: 35px;
+             color: rgba(255, 255, 255, 0.521);
+             margin-left: 163px;
+             overflow: none;
+           }
+        } */
+         
+        @media screen and (max-width:1000px) , screen and (orientation:portrait){
+          .part{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 1em;
+            flex-wrap: wrap;
+            overflow: none;
+          } 
+           
+          .container10{
+            display: grid;
+  grid-template-columns: 1fr 1fr ; 
+  row-gap: 1em;
+  overflow: none;}
+
+  
+  .header{
+    height: 82vh;
+    background-size: 217vw ;
+  }
+  .header.box{
+    height: 56vh;
+  }
+  .para .one{
+    font-size: 25px;
+  } 
+  .para .two{
+    font-size: 25px;
+  }
+  .para .three{
+    font-size: 18px;
+  }
+  .para .four{
+    font-size: 12px;
+  }
+  .para{
+    position: relative;
+    top:0;
+  }
+  .log{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 18px;
+  }
+  .log input{
+    width: 180px;
+    height: 30px;
+  }
+  .log button{
+    width: 170px;
+    height: 40px;
+  }
+
+} @media screen and (max-width:1326px){
+  .big{
+    
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 1em;
+  }
+} 
